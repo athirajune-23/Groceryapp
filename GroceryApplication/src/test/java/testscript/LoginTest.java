@@ -13,15 +13,17 @@ import utilities.ExcelUtility;
 public class LoginTest extends Base {
 	
 	public HomePage homepage;
-	public LoginPage loginpage;
+	
 	
 	@Test(groups="regression",description="Verifies that the user can log in successfully using valid username and password from Excel and confirms by checking the dashboard is displayed")
 	public void verifyTheUserIsAbleToLoginUsingValidCredentials() throws IOException {
 
 		String username = ExcelUtility.readStringData(1, 0, "loginpage");
 		String password = ExcelUtility.readStringData(1, 1, "loginpage");
-		//LoginPage loginpage = new LoginPage(driver);
+		
+		LoginPage loginpage = new LoginPage(driver);
 		loginpage.enterTheUsername(username).enterThePassword(password);
+		
 		//loginpage.enterThePassword(password);
 		homepage = loginpage.clickOnSigninButton();
 		boolean homepage = loginpage.isDashBoardDisplayed();
@@ -34,8 +36,10 @@ public class LoginTest extends Base {
 
 		String username = ExcelUtility.readStringData(2, 0, "loginpage");
 		String password = ExcelUtility.readStringData(2, 1, "loginpage");
-		//LoginPage loginpage = new LoginPage(driver);
+		
+		LoginPage loginpage = new LoginPage(driver);
 		loginpage.enterTheUsername(username).enterThePassword(password);
+		
 		//loginpage.enterThePassword(password);
 		homepage = loginpage.clickOnSigninButton();
 		boolean homepage = loginpage.isAlertDisplayed();
@@ -48,8 +52,10 @@ public class LoginTest extends Base {
 
 		String username = ExcelUtility.readStringData(3, 0, "loginpage");
 		String password = ExcelUtility.readStringData(3, 1, "loginpage");
-		//LoginPage loginpage = new LoginPage(driver);
+		
+		LoginPage loginpage = new LoginPage(driver);
 		loginpage.enterTheUsername(username).enterThePassword(password);
+		
 		//loginpage.enterThePassword(password);
 		homepage = loginpage.clickOnSigninButton();
 		boolean homepage = loginpage.isAlertDisplayed();
@@ -61,8 +67,10 @@ public class LoginTest extends Base {
 
 		String username = ExcelUtility.readStringData(4, 0, "loginpage");
 		String password = ExcelUtility.readStringData(4, 1, "loginpage");
-		//LoginPage loginpage = new LoginPage(driver);
+		
+		LoginPage loginpage = new LoginPage(driver);
 		loginpage.enterTheUsername(username).enterThePassword(password);
+		
 		//loginpage.enterThePassword(password);
 		homepage = loginpage.clickOnSigninButton();
 		boolean homepage = loginpage.isAlertDisplayed();
