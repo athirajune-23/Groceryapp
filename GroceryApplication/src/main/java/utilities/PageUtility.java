@@ -103,8 +103,24 @@ public class PageUtility {
 		
 	}
 	
+	//JavascriptExecutor js = (JavascriptExecutor) driver;
+	//js.executeScript("window.scrollBy(0,150)","");     //downward
+
+	//js.executeScript("window.scrollBy(0,-100)", "");  //upward
 	
-			
+	//js.executeScript("window.scrollBy(0,document.body.scrollHeight)", ""); //upside down height calculate chyth scroll aavum
+	
+	public void javaScriptExecutor(WebDriver driver)
+	{
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(x,y)","");
+	}
+	
+	public void javaScriptExecutorHeight(WebDriver driver)
+	{
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,document.body.scrollHeight)", "");
+	}
 }
 
 
