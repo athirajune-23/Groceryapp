@@ -58,16 +58,16 @@ public class HomePage {
 	
 	
 	
-	
-	
-	public void clickOnAdminButton()
+	public HomePage clickOnAdminButton()
 	{
 		admin.click();
+		return this;
     }
 	
-	public void ClickOnNewLogoutButton()
+	public LoginPage ClickOnNewLogoutButton()
 	{
 		logout.click();
+		return new LoginPage(driver);
 	}
 	
 	public boolean isSignInDisplayed()
