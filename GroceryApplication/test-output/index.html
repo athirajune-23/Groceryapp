@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,  3 skipped,  2 passed</span>
+                    <span class="method-stats">3 methods,  1 skipped,  2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title skipped">Retried methods</span>
@@ -101,16 +101,6 @@
                       <a href="#" panel-name="suite-multibrowsertesting" class="show-methods skipped suite-multibrowsertesting"> (show)</a> <!-- show-methods skipped suite-multibrowsertesting -->
                     </span>
                     <div class="method-list-content skipped suite-multibrowsertesting">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-multibrowsertesting" title="testscript.AdminUsersTest" class="method navigator-link" hash-for-method="verifyTheUserIsAbleToAccessAdminUsers">verifyTheUserIsAbleToAccessAdminUsers</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-multibrowsertesting" title="testscript.AdminUsersTest" class="method navigator-link" hash-for-method="verifyTheUserIsAbleToAccessAdminUsers">verifyTheUserIsAbleToAccessAdminUsers</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-multibrowsertesting" title="testscript.AdminUsersTest" class="method navigator-link" hash-for-method="verifyTheUserIsAbleToAccessAdminUsers">verifyTheUserIsAbleToAccessAdminUsers</a> <!-- method navigator-link -->
@@ -158,55 +148,14 @@
                   <a name="verifyTheUserIsAbleToAccessAdminUsers">
                   </a> <!-- verifyTheUserIsAbleToAccessAdminUsers -->
                   <span class="method-name">verifyTheUserIsAbleToAccessAdminUsers</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;alert alert-success alert-dismissible&apos;]&quot;}
-  (Session info: chrome=146.0.7680.80)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8416e7779436b5e9fc36c2cb5bf87916, findElement {using=xpath, value=//div[@class=&apos;alert alert-success alert-dismissible&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.80, chrome: {chromedriverVersion: 146.0.7680.153 (85fd829a1b2..., userDataDir: C:\Users\ABYPHI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65015}, goog:processID: 19124, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65015/devtoo..., se:cdpVersion: 146.0.7680.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8416e7779436b5e9fc36c2cb5bf87916
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
-	at pages.AdminUsersPage.isAlertDisplayed(AdminUsersPage.java:61)
-	at testscript.AdminUsersTest.verifyTheUserIsAbleToAccessAdminUsers(AdminUsersTest.java:44)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 18 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Verifies that the user can access the Admin Users section, create a new admin user, and confirms success by checking that an alert message is displayed.)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyTheUserIsAbleToAccessAdminUsers">
-                  </a> <!-- verifyTheUserIsAbleToAccessAdminUsers -->
-                  <span class="method-name">verifyTheUserIsAbleToAccessAdminUsers</span>
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@class=&apos;alert alert-success alert-dismissible&apos;]
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [3a2ae4b0-ee6e-4d0f-a339-316cc8d8a67a, findElement {using=xpath, value=//div[@class=&apos;alert alert-success alert-dismissible&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 147.0.2, moz:accessibilityChecks: false, moz:buildID: 20260126151322, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 5816, moz:profile: C:\Users\ABYPHI~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 3a2ae4b0-ee6e-4d0f-a339-316cc8d8a67a
+Command: [f56ed832-d979-4ae0-985f-6869549ffce0, findElement {using=xpath, value=//div[@class=&apos;alert alert-success alert-dismissible&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 147.0.2, moz:accessibilityChecks: false, moz:buildID: 20260126151322, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 4756, moz:profile: C:\Users\ABYPHI~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: f56ed832-d979-4ae0-985f-6869549ffce0
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -221,48 +170,8 @@ Session ID: 3a2ae4b0-ee6e-4d0f-a339-316cc8d8a67a
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
-	at pages.AdminUsersPage.isAlertDisplayed(AdminUsersPage.java:61)
-	at testscript.AdminUsersTest.verifyTheUserIsAbleToAccessAdminUsers(AdminUsersTest.java:44)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 18 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Verifies that the user can access the Admin Users section, create a new admin user, and confirms success by checking that an alert message is displayed.)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyTheUserIsAbleToAccessAdminUsers">
-                  </a> <!-- verifyTheUserIsAbleToAccessAdminUsers -->
-                  <span class="method-name">verifyTheUserIsAbleToAccessAdminUsers</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@class=&apos;alert alert-success alert-dismissible&apos;]
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [97478c9d-a8ba-485e-9d48-b0a955a490f2, findElement {using=xpath, value=//div[@class=&apos;alert alert-success alert-dismissible&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 147.0.2, moz:accessibilityChecks: false, moz:buildID: 20260126151322, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 16388, moz:profile: C:\Users\ABYPHI~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 97478c9d-a8ba-485e-9d48-b0a955a490f2
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
-	at pages.AdminUsersPage.isAlertDisplayed(AdminUsersPage.java:61)
-	at testscript.AdminUsersTest.verifyTheUserIsAbleToAccessAdminUsers(AdminUsersTest.java:44)
+	at pages.AdminUsersPage.isAlertDisplayed(AdminUsersPage.java:67)
+	at testscript.AdminUsersTest.verifyTheUserIsAbleToAccessAdminUsers(AdminUsersTest.java:48)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
@@ -364,32 +273,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyTheUserIsAbleToAccessAdminUsers')
 data.setCell(0, 2, 'testscript.AdminUsersTest')
-data.setCell(0, 3, 18513);
+data.setCell(0, 3, 15357);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyTheUserIsAbleToAccessAdminUsers')
 data.setCell(1, 2, 'testscript.AdminUsersTest')
-data.setCell(1, 3, 10023);
+data.setCell(1, 3, 11910);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyTheUserIsAbleToAccessAdminUsers')
 data.setCell(2, 2, 'testscript.AdminUsersTest')
-data.setCell(2, 3, 7864);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyTheUserIsAbleToAccessAdminUsers')
-data.setCell(3, 2, 'testscript.AdminUsersTest')
-data.setCell(3, 3, 5318);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyTheUserIsAbleToAccessAdminUsers')
-data.setCell(4, 2, 'testscript.AdminUsersTest')
-data.setCell(4, 3, 2748);
+data.setCell(2, 3, 4130);
 window.suiteTableData['multibrowsertesting']= { tableData: data, tableDiv: 'times-div-multibrowsertesting'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 53 seconds</span>
               <div id="times-div-multibrowsertesting">
               </div> <!-- times-div-multibrowsertesting -->
             </div> <!-- times-div -->
@@ -417,64 +318,40 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">testscript.AdminUsersTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">browserInitialization(firefox)</span>
+                <span class="method-name">browserInitialization(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">browserInitialization(chrome)</span>
-                <span class="method-start">1 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyTheUserIsAbleToAccessAdminUsers</span>
-                <span class="method-start">5650 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyTheUserIsAbleToAccessAdminUsers</span>
-                <span class="method-start">20909 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserQuitAndClose([TestResult name=verifyTheUserIsAbleToAccessAdminUsers status=SKIP method=AdminUsersTest.verifyTheUs...)</span>
-                <span class="method-start">24205 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">browserInitialization(chrome)</span>
-                <span class="method-start">25747 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyTheUserIsAbleToAccessAdminUsers</span>
-                <span class="method-start">29523 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserQuitAndClose([TestResult name=verifyTheUserIsAbleToAccessAdminUsers status=SKIP method=AdminUsersTest.verifyTheUs...)</span>
-                <span class="method-start">30958 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">browserQuitAndClose([TestResult name=verifyTheUserIsAbleToAccessAdminUsers status=SUCCESS method=AdminUsersTest.verifyTh...)</span>
-                <span class="method-start">34844 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
                 <span class="method-name">browserInitialization(firefox)</span>
-                <span class="method-start">34994 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyTheUserIsAbleToAccessAdminUsers</span>
-                <span class="method-start">43492 ms</span>
+                <span class="method-start">9316 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserQuitAndClose([TestResult name=verifyTheUserIsAbleToAccessAdminUsers status=SKIP method=AdminUsersTest.verifyTheUs...)</span>
-                <span class="method-start">51365 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">browserInitialization(firefox)</span>
-                <span class="method-start">53245 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyTheUserIsAbleToAccessAdminUsers</span>
-                <span class="method-start">61299 ms</span>
+                <span class="method-start">22828 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">browserQuitAndClose([TestResult name=verifyTheUserIsAbleToAccessAdminUsers status=SUCCESS method=AdminUsersTest.verifyTh...)</span>
-                <span class="method-start">64050 ms</span>
+                <span class="method-start">24682 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuitAndClose([TestResult name=verifyTheUserIsAbleToAccessAdminUsers status=SKIP method=AdminUsersTest.verifyTheUs...)</span>
+                <span class="method-start">34759 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserInitialization(firefox)</span>
+                <span class="method-start">37531 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyTheUserIsAbleToAccessAdminUsers</span>
+                <span class="method-start">47340 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuitAndClose([TestResult name=verifyTheUserIsAbleToAccessAdminUsers status=SUCCESS method=AdminUsersTest.verifyTh...)</span>
+                <span class="method-start">51478 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

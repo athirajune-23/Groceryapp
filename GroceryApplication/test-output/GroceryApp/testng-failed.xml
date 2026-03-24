@@ -4,13 +4,14 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testscript.ManageCategoryTest">
+      <class name="testscript.LoginTest">
         <methods>
-          <include name="verifyTheUserIsAbleToAccessManageCategoryPage"/>
+          <include name="verifyTheUserIsAbleToLoginUsingValidCredentials"/>
+          <include name="browserQuitAndClose"/>
           <include name="browserInitialization"/>
-          <include name="browserQuit"/>
+          <include name="verifyTheUserIsAbleToLoginUsingValidUsernameAndInvalidPassword"/>
         </methods>
-      </class> <!-- testscript.ManageCategoryTest -->
+      </class> <!-- testscript.LoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [GroceryApp] -->
