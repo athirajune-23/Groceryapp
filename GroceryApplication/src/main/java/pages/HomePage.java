@@ -29,11 +29,13 @@ public class HomePage {
 		managenewsmoreinfo.click();
 		return new ManageNewsPage(driver);
 	}
+	
 	public ManageCategoryPage clickOnManageCategoryMoreInfo()
 	{
 		managecategorymoreinfo.click();
 		return new ManageCategoryPage(driver);
 	}
+	
 	public ManageContactPage clickOnManageContactMoreinfo() {
 
 		managecontactmoreinfo.click();

@@ -13,8 +13,6 @@ import utilities.ExcelUtility;
 
 public class HomeTest extends Base {
 	
-	public HomePage homepage;
-	
 	
 	@Test(description="Verifies that the user can successfully log out and confirms by checking that the sign-in page is displayed.")
 	public void verifyTheUserIsAbleToLogOut() throws IOException
@@ -23,9 +21,9 @@ public class HomeTest extends Base {
 		String password = ExcelUtility.readStringData(1, 1, "loginpage");
 
 		LoginPage loginpage = new LoginPage(driver);
-		loginpage.enterTheUsername(username).enterThePassword(password);
-		//loginpage.enterThePassword(password);
-		homepage=loginpage.clickOnSigninButton();
+		loginpage.enterTheUsername(username);
+		loginpage.enterThePassword(password);
+		loginpage.clickOnSigninButton();
 		
 		HomePage homepage = new HomePage(driver);
 		homepage.clickOnAdminButton();
