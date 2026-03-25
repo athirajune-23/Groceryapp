@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="1" ignored="1" total="4" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-24T16:33:34 IST" name="multibrowsertesting" finished-at="2026-03-24T16:34:28 IST" duration-ms="53806">
+  <suite started-at="2026-03-25T12:19:56 IST" name="GroceryApp" finished-at="2026-03-25T12:20:17 IST" duration-ms="20699">
     <groups>
+      <group name="regression">
+        <method signature="LoginTest.verifyTheUserIsAbleToLoginUsingValidCredentials()[pri:0, instance:testscript.LoginTest@2254127a]" name="verifyTheUserIsAbleToLoginUsingValidCredentials" class="testscript.LoginTest"/>
+      </group> <!-- regression -->
     </groups>
-    <test started-at="2026-03-24T16:33:34 IST" name="chrometest" finished-at="2026-03-24T16:34:04 IST" duration-ms="29320">
-      <class name="testscript.AdminUsersTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.AdminUsersTest@368f2016]" started-at="2026-03-24T16:33:34 IST" name="browserInitialization" finished-at="2026-03-24T16:33:44 IST" duration-ms="9312" status="PASS">
+    <test started-at="2026-03-25T12:19:56 IST" name="Test" finished-at="2026-03-25T12:20:17 IST" duration-ms="20699">
+      <class name="testscript.LoginTest">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@2254127a]" started-at="2026-03-25T12:19:56 IST" name="browserInitialization" finished-at="2026-03-25T12:20:06 IST" duration-ms="10072" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,140 +21,48 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyTheUserIsAbleToAccessAdminUsers()[pri:0, instance:testscript.AdminUsersTest@368f2016]" started-at="2026-03-24T16:33:44 IST" name="verifyTheUserIsAbleToAccessAdminUsers" description="Verifies that the user can access the Admin Users section, create a new admin user, and confirms success by checking that an alert message is displayed." finished-at="2026-03-24T16:33:59 IST" duration-ms="15357" status="PASS">
+        <test-method signature="verifyTheUserIsAbleToLoginUsingValidCredentials()[pri:0, instance:testscript.LoginTest@2254127a]" started-at="2026-03-25T12:20:06 IST" name="verifyTheUserIsAbleToLoginUsingValidCredentials" description="Verifies that the user can log in successfully using valid username and password from Excel and confirms by checking the dashboard is displayed" finished-at="2026-03-25T12:20:10 IST" duration-ms="4074" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTheUserIsAbleToAccessAdminUsers -->
-        <test-method is-config="true" signature="browserQuitAndClose(org.testng.ITestResult)[pri:0, instance:testscript.AdminUsersTest@368f2016]" started-at="2026-03-24T16:33:59 IST" name="browserQuitAndClose" finished-at="2026-03-24T16:34:04 IST" duration-ms="4544" status="PASS">
+        </test-method> <!-- verifyTheUserIsAbleToLoginUsingValidCredentials -->
+        <test-method is-config="true" signature="browserQuitAndClose(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@2254127a]" started-at="2026-03-25T12:20:10 IST" name="browserQuitAndClose" finished-at="2026-03-25T12:20:11 IST" duration-ms="483" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyTheUserIsAbleToAccessAdminUsers status=SUCCESS method=AdminUsersTest.verifyTheUserIsAbleToAccessAdminUsers()[pri:0, instance:testscript.AdminUsersTest@368f2016] output={null}]]]>
+                <![CDATA[[TestResult name=verifyTheUserIsAbleToLoginUsingValidCredentials status=SUCCESS method=LoginTest.verifyTheUserIsAbleToLoginUsingValidCredentials()[pri:0, instance:testscript.LoginTest@2254127a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuitAndClose -->
-      </class> <!-- testscript.AdminUsersTest -->
-    </test> <!-- chrometest -->
-    <test started-at="2026-03-24T16:33:34 IST" name="firefoxtest" finished-at="2026-03-24T16:34:28 IST" duration-ms="53806">
-      <class name="testscript.AdminUsersTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.AdminUsersTest@3d285d7e]" started-at="2026-03-24T16:33:34 IST" name="browserInitialization" finished-at="2026-03-24T16:33:57 IST" duration-ms="22827" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@2254127a]" started-at="2026-03-25T12:20:11 IST" name="browserInitialization" finished-at="2026-03-25T12:20:15 IST" duration-ms="3832" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method retried="true" signature="verifyTheUserIsAbleToAccessAdminUsers()[pri:0, instance:testscript.AdminUsersTest@3d285d7e]" started-at="2026-03-24T16:33:57 IST" name="verifyTheUserIsAbleToAccessAdminUsers" description="Verifies that the user can access the Admin Users section, create a new admin user, and confirms success by checking that an alert message is displayed." finished-at="2026-03-24T16:34:09 IST" duration-ms="11910" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: //div[@class='alert alert-success alert-dismissible']
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [f56ed832-d979-4ae0-985f-6869549ffce0, findElement {using=xpath, value=//div[@class='alert alert-success alert-dismissible']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 147.0.2, moz:accessibilityChecks: false, moz:buildID: 20260126151322, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 4756, moz:profile: C:\Users\ABYPHI~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: f56ed832-d979-4ae0-985f-6869549ffce0]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@class='alert alert-success alert-dismissible']
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [f56ed832-d979-4ae0-985f-6869549ffce0, findElement {using=xpath, value=//div[@class='alert alert-success alert-dismissible']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 147.0.2, moz:accessibilityChecks: false, moz:buildID: 20260126151322, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 4756, moz:profile: C:\Users\ABYPHI~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: f56ed832-d979-4ae0-985f-6869549ffce0
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
-at pages.AdminUsersPage.isAlertDisplayed(AdminUsersPage.java:67)
-at testscript.AdminUsersTest.verifyTheUserIsAbleToAccessAdminUsers(AdminUsersTest.java:48)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="verifyTheUserIsAbleToLoginUsingValidUsernameAndInvalidPassword()[pri:0, instance:testscript.LoginTest@2254127a]" started-at="2026-03-25T12:20:15 IST" name="verifyTheUserIsAbleToLoginUsingValidUsernameAndInvalidPassword" description="Verifies that the user cannot log in with a valid username and invalid password by checking that an alert message is displayed." finished-at="2026-03-25T12:20:16 IST" duration-ms="1619" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTheUserIsAbleToAccessAdminUsers -->
-        <test-method is-config="true" signature="browserQuitAndClose(org.testng.ITestResult)[pri:0, instance:testscript.AdminUsersTest@3d285d7e]" started-at="2026-03-24T16:34:09 IST" name="browserQuitAndClose" finished-at="2026-03-24T16:34:12 IST" duration-ms="2769" status="PASS">
+        </test-method> <!-- verifyTheUserIsAbleToLoginUsingValidUsernameAndInvalidPassword -->
+        <test-method is-config="true" signature="browserQuitAndClose(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@2254127a]" started-at="2026-03-25T12:20:16 IST" name="browserQuitAndClose" finished-at="2026-03-25T12:20:17 IST" duration-ms="466" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyTheUserIsAbleToAccessAdminUsers status=SKIP method=AdminUsersTest.verifyTheUserIsAbleToAccessAdminUsers()[pri:0, instance:testscript.AdminUsersTest@3d285d7e] output={null}]]]>
+                <![CDATA[[TestResult name=verifyTheUserIsAbleToLoginUsingValidUsernameAndInvalidPassword status=SUCCESS method=LoginTest.verifyTheUserIsAbleToLoginUsingValidUsernameAndInvalidPassword()[pri:0, instance:testscript.LoginTest@2254127a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuitAndClose -->
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.AdminUsersTest@3d285d7e]" started-at="2026-03-24T16:34:12 IST" name="browserInitialization" finished-at="2026-03-24T16:34:22 IST" duration-ms="9807" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyTheUserIsAbleToAccessAdminUsers()[pri:0, instance:testscript.AdminUsersTest@3d285d7e]" started-at="2026-03-24T16:34:22 IST" name="verifyTheUserIsAbleToAccessAdminUsers" description="Verifies that the user can access the Admin Users section, create a new admin user, and confirms success by checking that an alert message is displayed." finished-at="2026-03-24T16:34:26 IST" duration-ms="4130" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheUserIsAbleToAccessAdminUsers -->
-        <test-method is-config="true" signature="browserQuitAndClose(org.testng.ITestResult)[pri:0, instance:testscript.AdminUsersTest@3d285d7e]" started-at="2026-03-24T16:34:26 IST" name="browserQuitAndClose" finished-at="2026-03-24T16:34:28 IST" duration-ms="2238" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyTheUserIsAbleToAccessAdminUsers status=SUCCESS method=AdminUsersTest.verifyTheUserIsAbleToAccessAdminUsers()[pri:0, instance:testscript.AdminUsersTest@3d285d7e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuitAndClose -->
-      </class> <!-- testscript.AdminUsersTest -->
-    </test> <!-- firefoxtest -->
-  </suite> <!-- multibrowsertesting -->
+      </class> <!-- testscript.LoginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- GroceryApp -->
 </testng-results>
