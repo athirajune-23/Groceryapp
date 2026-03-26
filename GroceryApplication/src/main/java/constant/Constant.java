@@ -4,6 +4,7 @@ public class Constant {
 	
 	public static final String TESTDATAFILE = System.getProperty("user.dir")+"\\src\\test\\resources\\TestDataSample.xlsx";
 	public static final String CATEGORYIMAGEFILE = System.getProperty("user.dir")+"\\src\\test\\resources\\veg.png";
+	public static final String CONFIGFILE = System.getProperty("user.dir")+"\\src\\main\\resources\\config.properties";
 	public static final String LOGINUSINGVALIDCREDENTIALS = "homepage is not loaded with valid credentials";
 	public static final String LOGINWITHINVALIDPASSWORD ="homepage is loaded with incorrect password";
 	public static final String LOGINWITHINVALIDUSERNAME ="homepage is loaded with incorrect password";
