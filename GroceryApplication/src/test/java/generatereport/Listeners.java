@@ -20,7 +20,7 @@ public class Listeners implements ITestListener {
 
 	public void onTestStart(ITestResult result) {
 
-		ITestListener.super.onTestStart(result);
+		ITestListener.super.onTestStart(result); 
 		test = extent.createTest(result.getMethod().getMethodName());
 		extentTest.set(test);
 
